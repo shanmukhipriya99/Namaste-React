@@ -10,7 +10,8 @@ const parent = React.createElement(
  The above code follows the following structure:
     <div id='parent'>
         <div id='child'>
-            <h1 id='heading'>H1 Tag!,</h1>
+            <h1 id='heading'>H1 Tag!</h1>
+            <h2 id='heading'>H2 Tag!</h1>
         </div>
     </div>
 */

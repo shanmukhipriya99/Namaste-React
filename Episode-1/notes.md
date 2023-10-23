@@ -141,7 +141,7 @@
 - React is named React because of its ability to react to changes in data.
 - #### What is `crossorigin in script tag`?
 
-  The `crossorigin` attribute sets the mode of the request to an HTTP CORS Request.
+  The `crossorigin` attribute sets the mode of the request to an HTTP CORS (cross-origin resource sharing) Request.
   The purpose of crossorigin attribute is used to share the resources from one domain to another domain. Basically, it is used to handle the CORS request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains.
 
   _Syntax_
