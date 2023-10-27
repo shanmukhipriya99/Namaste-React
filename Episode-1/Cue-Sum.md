@@ -2,7 +2,7 @@
 
 ### What is the shortcut for the HTML boilerplate?
 
-### Which tag is used to inject JS into HTML and where shoukd it be placed?
+### Which tag is used to inject JS into HTML and where should it be placed?
 
 ### How do you create a HTML element with JS?
 
