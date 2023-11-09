@@ -21,5 +21,7 @@
 19. What is `browserslist`?
 20. How many package.json files can be present in one project folder?
 21. What is `transitive dependency`?
+22. Why do we use `type="module"` in script tags?
+23. Why is not preferred to import react into our project with CDN links?
 
 ### Summary

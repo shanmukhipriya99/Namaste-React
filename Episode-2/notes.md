@@ -35,14 +35,15 @@
   - DEV and production Build
   - Super fast building algorithm
   - Image optimization
-  - Caching while development
-  - Compresses
-  - Compatible with older version of browser
-  - HTTPS in dev
+  - Caching while development => Faster Builds
+  - Compress
+  - Differential Bundling => Compatible with older versions of browsers
+  - HTTPS support in dev env
   - Port Number
   - Consistent hashing algorithm
   - Zero Configuration
   - Automatic code splitting
+  - Tree Shaking
 
 - `Hot Module Replacement (HMR)` exchanges, adds, or removes modules while an application is running, without a full reload. This can significantly speed up development in a few ways: Retain application state lost during a full reload.
 
@@ -55,10 +56,11 @@
   ```
   npx parcel <entry_point>
   ```
-  - For production build :
+  - For production build, usually takes longer than the development build:
   ```
   npx parcel build <entry_point>
   ```
+- When required, remove `"main": "app.js"` from package.json file.
 
 `5 superpowers of Parcel`:
 
@@ -188,3 +190,13 @@ The `/dist` folder contains the minimized version of the source code. The code p
 #### What is `transitive dependency`?
 
 When we install modules in our project folder, we get the node_modules folder, which contains the dependencies of the modules initially installed. Now, the dependencies in the node_modules folder may have their own dependencies (also present in the node_modules folder), and so on. This is known as `transitive dependencies`.
+
+#### Why do we use `type="module"` in script tags?
+
+If we need to perform any kind of imports/exports in our JS files, we need to use `type="module"` inside the script tag to specify that the file is a module. Else, it will be treated as a browser script and they are not allowed to have imports/exports.
+
+#### React with CDN Links
+
+It is not preferred to import react and react-dom with cdn links for many reasons. Firstly, the CDN links we use have the version of react in them. So, every time there is an update, we'd have to manually change the link which is tiresome and would also take time to get the data from the CDN link every time.
+
+Instead, we can install react and react-dom via `npm` so that these are easily accessible from the node_modules folder.
