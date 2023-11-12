@@ -72,3 +72,40 @@ Ex:
             );
         };
   ```
+- JSX automatically sanitizes data preventing any malicious attacks like XSS, etc.
+
+### `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`
+
+The difference is stated below:
+
+- `{TitleComponent}`: This value describes the `TitleComponent` as a javascript expression or a variable.
+  The `{}` can embed a javascript expression or a variable inside it.
+- `<TitleComponent/>` : This value represents a Component that is basically returning some JSX value. In simple terms `TitleComponent` a function that is returning a JSX value.
+  A component is written inside the `{<  />}` expression.
+- `<TitleComponent></TitleComponent>` : `<TitleComponent />` and `<TitleComponent></TitleComponent>` are equivalent only when `< TitleComponent />` has no child components. The opening and closing tags are created to include the child components.
+
+#### Example
+
+```sh
+<TitleComponent>
+    <FirstChildComponent />
+    <SecondChildComponent />
+    <ThirdChildComponent />
+</TitleComponent>
+```
+
+### Role of `type` attribute in script tag? What options can I use there?
+
+The `type` attribute specifies the type of the script. The type attribute identifies the content between the `<script>` and `</script>` tags. It has a default value which is _“text/javascript”_.
+
+#### `type` attribute can be of the following types:
+
+- `text/javascript` : It is the basic standard of writing javascript code inside the `<script>` tag.
+  #### Syntax
+  ```sh
+  <script type="text/javascript"></script>
+  ```
+- `text/ecmascript` : this value indicates that the script is following the `EcmaScript` standards.
+- `module`: This value tells the browser that the script is a module that can import or export other files or modules inside it.
+- `text/babel` : This value indicates that the script is a babel type and required bable to transpile it.
+- `text/typescript`: As the name suggest the script is written in `TypeScript`.
