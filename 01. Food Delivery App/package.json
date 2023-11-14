@@ -1,0 +1,20 @@
+{
+  "name": "food-delivery-app",
+  "version": "1.0.0",
+  "description": "A food delivery app",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "Sandy",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.2",
+    "process": "^0.11.10"
+  }
+}
