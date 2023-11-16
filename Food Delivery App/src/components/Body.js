@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import RestaurantCard from './RestaurantCard';
 import { restaurantList } from '../../utils/mockData';
-import Search from '../components/Search';
+import Search from './Search';
 
 const Body = () => {
   const [restList, setRestList] = useState(restaurantList);
