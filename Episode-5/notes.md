@@ -14,10 +14,10 @@ export const Component;
 import {Component} from "path";
 ```
 
-### What is the difference between `Named export`, `Default export`, and `* as export`?
+### What is the difference between `Named export`, `Default export`, and `* as import`?
 
-- ES6 allowss us to import & export a module and use it in other files. ES6 provides two ways to export a module from a file: `named export` and `default export`.
-- In `Named export`, one can have multiple named exports per file. Then import the specific exports they want surrounded in `{}` braces. The name of imported module has to be the same as the name of the exported module.
+- ES6 allows us to import & export a module and use it in other files. ES6 provides two ways to export a module from a file: `named export` and `default export`.
+- In `Named export`, one can have multiple named exports per file. Then import the specific exports, surrounded in `{}` braces. The name of the imported module has to be the same as the name of the exported module.
 - In `Named export`, the component is exported from MyComponent.js file like:
 
   ```sh
@@ -52,8 +52,8 @@ import {Component} from "path";
   import MyComponent from "./MyComponent";
   ```
 
-- In `* as export`, it is used to import the whole module as a component and access the components inside the module.
-- In `* as export`, the component is exported from MyComponent.js file like:
+- In `* as`, it is used to import the whole module as a component and access the components inside the module.
+- In `* as`, the component is exported from MyComponent.js file like:
 
   ```sh
   export const MyComponent = () => {}
@@ -64,7 +64,7 @@ import {Component} from "path";
 - and the component is imported from MyComponent.js file like:
 
   ```sh
-  import \* as MainComponents from "./MyComponent";
+  import * as MainComponents from "./MyComponent";
   ```
 
 - Now we can use them in JSX as:

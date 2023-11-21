@@ -29,6 +29,7 @@
 - The first link imports the whole of react.
 - The second link is for importing `ReactDOM`, which is like a bridge between React and the browsers.
 - Having the CDN links in the `script` tag allows us to use `React` and `ReactDOM`.
+- We use the `crossorigin` attribute to handle cross-origin requests and security issues like CORS violations.
 - `React.createElement('<tag>', {}, 'html content of the tag')` => Creates the element and passes the html content to the created element. The second argument, the object, can be used to pass attributes.
   Ex:
 
@@ -149,5 +150,6 @@
   ```sh
   <script crossorigin="anonymous|use-credentials">
   ```
+
 - #### `React` vs `ReactDOM`
   `React` and `ReactDOM` are JavaScript libraries but `React` helps in creating user interfaces and `ReactDOM` allows `React to interact with the DOM`.

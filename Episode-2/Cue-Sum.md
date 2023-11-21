@@ -5,10 +5,10 @@
 3. Git vs GitHub?
 4. What is `npm`?
 5. How to initialize `npm`?
-6.  What is `Parcel/Webpack`? Why do we need it?
-7.  What is `Hot Module Replacement`?
-8.  List down your favorite `5 superpowers of Parcel` and describe any 3 of them in your own words.
-9.  What is the difference between `dependencies` vs `devDependencies`?
+6. What is `Parcel/Webpack`? Why do we need it?
+7. What is `Hot Module Replacement`?
+8. List down your favorite `5 superpowers of Parcel` and describe any 3 of them in your own words.
+9. What is the difference between `dependencies` vs `devDependencies`?
 10. **~** or **^** in `package.json` file?
 11. What is `.parcel-cache`?
 12. What is `npx`?
@@ -22,6 +22,6 @@
 20. How many package.json files can be present in one project folder?
 21. What is `transitive dependency`?
 22. Why do we use `type="module"` in script tags?
-23. Why is not preferred to import react into our project with CDN links?
+23. Why is it not preferred to import react into our project with CDN links?
 
 ### Summary
