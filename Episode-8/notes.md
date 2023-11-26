@@ -155,7 +155,7 @@ Refer: [React-Lifecycle-methods-Diagram](https://projects.wojtekmaj.pl/react-lif
 
 Technically, we can, but doing so would beat the purpose of using a state variable, primarily because updating a state variable directly won't re-render the component and it would mess things up while scaling.
 
-Therefore, it is advised to use the `useState()`'s `set()` or `this.setState()` to update state depending on the type of the component.
+Therefore, it is advised to use the `useState()`'s updater function or `this.setState()` to update state depending on the type of the component.
 
 ### In the case of `class-based components`, we have the `componentWillUnmount()` option for the `unmounting phase`. How do deal with this when working with `functional components`?
 
